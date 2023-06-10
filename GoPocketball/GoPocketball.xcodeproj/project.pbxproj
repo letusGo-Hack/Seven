@@ -18,6 +18,9 @@
 		352145422A34374C00A37426 /* CapturedImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145412A34374C00A37426 /* CapturedImageCollectionView.swift */; };
 		352145472A343A1600A37426 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145462A343A1600A37426 /* Capture.swift */; };
 		352145492A343A2000A37426 /* ARCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145482A343A2000A37426 /* ARCamera.swift */; };
+		3522AC582A34455E0043F8A1 /* ImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522AC572A34455E0043F8A1 /* ImageCellView.swift */; };
+		3522AC5A2A344C8B0043F8A1 /* ARCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522AC592A344C8B0043F8A1 /* ARCameraView.swift */; };
+		3522AC5C2A34579D0043F8A1 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522AC5B2A34579D0043F8A1 /* CaptureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		352145412A34374C00A37426 /* CapturedImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedImageCollectionView.swift; sourceTree = "<group>"; };
 		352145462A343A1600A37426 /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
 		352145482A343A2000A37426 /* ARCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCamera.swift; sourceTree = "<group>"; };
+		3522AC572A34455E0043F8A1 /* ImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellView.swift; sourceTree = "<group>"; };
+		3522AC592A344C8B0043F8A1 /* ARCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraView.swift; sourceTree = "<group>"; };
+		3522AC5B2A34579D0043F8A1 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,9 @@
 			children = (
 				3521453F2A34372A00A37426 /* ImageData.swift */,
 				352145412A34374C00A37426 /* CapturedImageCollectionView.swift */,
+				3522AC572A34455E0043F8A1 /* ImageCellView.swift */,
+				3522AC592A344C8B0043F8A1 /* ARCameraView.swift */,
+				3522AC5B2A34579D0043F8A1 /* CaptureView.swift */,
 			);
 			path = CapturedImageCollection;
 			sourceTree = "<group>";
@@ -295,10 +304,13 @@
 			files = (
 				352145162A34294E00A37426 /* ContentView.swift in Sources */,
 				352145142A34294E00A37426 /* GoPocketballApp.swift in Sources */,
+				3522AC5C2A34579D0043F8A1 /* CaptureView.swift in Sources */,
 				352145422A34374C00A37426 /* CapturedImageCollectionView.swift in Sources */,
 				352145492A343A2000A37426 /* ARCamera.swift in Sources */,
+				3522AC5A2A344C8B0043F8A1 /* ARCameraView.swift in Sources */,
 				352145472A343A1600A37426 /* Capture.swift in Sources */,
 				352145402A34372A00A37426 /* ImageData.swift in Sources */,
+				3522AC582A34455E0043F8A1 /* ImageCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

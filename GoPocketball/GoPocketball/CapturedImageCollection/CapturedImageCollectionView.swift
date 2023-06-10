@@ -5,4 +5,38 @@
 //  Created by Sh Hong on 2023/06/10.
 //
 
-import Foundation
+import SwiftUI
+
+struct CapturedImageCollectionView: View {
+    let mockData: MockData
+    
+    var body: some View {
+        NavigationView {
+            ScrollView {
+                LazyVGrid(
+                    columns: [GridItem(.flexible()), GridItem(.flexible())],
+                    spacing: 10
+                )
+                {
+                    ForEach(mockData.data, id: \.self) { data in
+                        NavigationLink(destination: ARCameraView(data: data)) {
+                            ImageCellView(item: data)
+                        }
+                    }
+                }
+                .padding()
+            }
+            .navigationTitle("저장소")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        CaptureView()
+                    } label: {
+                        Text("추가")
+                    }
+
+                }
+            }
+        }
+    }
+}
