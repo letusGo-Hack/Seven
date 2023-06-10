@@ -14,11 +14,16 @@ struct CaptureView: View {
     
     let session: ObjectCaptureSession
     let url: URL
+    let name: String
     @State var isDetectionSucceed: Bool = false
     @Environment(\.dismiss) var dismiss
     
-    init(in url: URL) {
+    init(
+        in url: URL,
+        name: String
+    ) {
         self.url = url
+        self.name = name
         self.session = ObjectCaptureSession()
         var configuration = ObjectCaptureSession.Configuration()
         configuration.checkpointDirectory = url.appendingPathComponent("Snapshots/")
@@ -32,7 +37,7 @@ struct CaptureView: View {
     var body: some View {
         ZStack {
             ObjectCaptureView(session: session)
-            ZStack {
+            VStack {
                 Spacer()
                 if case .ready = session.state {
                     Button("Detect") {
@@ -54,10 +59,11 @@ struct CaptureView: View {
                                     input: url.appendingPathComponent("Images/"),
                                     configuration: configuration)
                                 try session.process(requests: [
-                                    .modelFile(url: url.appendingPathComponent("Models/model.usdz"))
+                                    .modelFile(url: url.appendingPathComponent("Models/\(name).usdz"))
                                 ])
                                 for try await output in session.outputs {
                                     if case .processingComplete = output {
+                                        self.session.finish()
                                         dismiss()
                                     }
                                 }

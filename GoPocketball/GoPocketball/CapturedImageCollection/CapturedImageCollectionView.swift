@@ -18,9 +18,12 @@ struct CapturedImageCollectionView: View {
                     spacing: 10
                 )
                 {
-                    ForEach(mockData.data, id: \.self) { data in
-                        NavigationLink(destination: ARCameraView(objectURLPath: Dummy.ojectURL)) {
-                            ImageCellView(item: data)
+                    NavigationLink(destination: ARCameraView(objectURLPath: Dummy.ojectURL)) {
+                        ImageCellView(item: "Dummy")
+                    }
+                    ForEach(mockData.usdzFileNames, id: \.self) { name in
+                        NavigationLink(destination: ARCameraView(objectURLPath: documentationURL().appendingPathComponent("Models/\(name).usdz").absoluteString)) {
+                            ImageCellView(item: name)
                         }
                     }
                 }
@@ -31,7 +34,7 @@ struct CapturedImageCollectionView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
                         if #available(iOS 17.0, *) {
-                            CaptureView(in: documentationURL())
+                            CaptureView(in: documentationURL(), name: "")
                         }
                     } label: {
                         Text("추가")
