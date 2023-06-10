@@ -33,9 +33,7 @@ struct CapturedImageCollectionView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
-                        if #available(iOS 17.0, *) {
-                            CaptureView(in: documentationURL(), name: "")
-                        }
+                        SaveInformationView()
                     } label: {
                         Text("추가")
                     }

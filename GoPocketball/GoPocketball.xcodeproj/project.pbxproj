@@ -20,6 +20,7 @@
 		352145492A343A2000A37426 /* ARCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145482A343A2000A37426 /* ARCameraView.swift */; };
 		3522AC5E2A3468E50043F8A1 /* ImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522AC5D2A3468E50043F8A1 /* ImageCellView.swift */; };
 		3522AC602A346A340043F8A1 /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3522AC5F2A346A340043F8A1 /* AirForce.usdz */; };
+		3522AC632A347E700043F8A1 /* SaveInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522AC622A347E700043F8A1 /* SaveInformationView.swift */; };
 		D1DB3BAB2A344A07007884F1 /* ARQuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB3BAA2A344A07007884F1 /* ARQuickLookViewController.swift */; };
 		D1DB3BAF2A3458EF007884F1 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB3BAE2A3458EF007884F1 /* Dummy.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		352145482A343A2000A37426 /* ARCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraView.swift; sourceTree = "<group>"; };
 		3522AC5D2A3468E50043F8A1 /* ImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellView.swift; sourceTree = "<group>"; };
 		3522AC5F2A346A340043F8A1 /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = AirForce.usdz; sourceTree = "<group>"; };
+		3522AC622A347E700043F8A1 /* SaveInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveInformationView.swift; sourceTree = "<group>"; };
 		D1DB3BAA2A344A07007884F1 /* ARQuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickLookViewController.swift; sourceTree = "<group>"; };
 		D1DB3BAE2A3458EF007884F1 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 				352145452A343A0D00A37426 /* Capture */,
 				352145442A3439DC00A37426 /* ARCamera */,
 				352145432A34397500A37426 /* CapturedImageCollection */,
+				3522AC612A347E4A0043F8A1 /* SaveInfomationView */,
 				352145132A34294E00A37426 /* GoPocketballApp.swift */,
 				352145152A34294E00A37426 /* ContentView.swift */,
 				352145172A34295000A37426 /* Assets.xcassets */,
@@ -173,6 +176,14 @@
 				352145462A343A1600A37426 /* Capture.swift */,
 			);
 			path = Capture;
+			sourceTree = "<group>";
+		};
+		3522AC612A347E4A0043F8A1 /* SaveInfomationView */ = {
+			isa = PBXGroup;
+			children = (
+				3522AC622A347E700043F8A1 /* SaveInformationView.swift */,
+			);
+			path = SaveInfomationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 			files = (
 				352145162A34294E00A37426 /* ContentView.swift in Sources */,
 				D1DB3BAB2A344A07007884F1 /* ARQuickLookViewController.swift in Sources */,
+				3522AC632A347E700043F8A1 /* SaveInformationView.swift in Sources */,
 				D1DB3BAF2A3458EF007884F1 /* Dummy.swift in Sources */,
 				352145142A34294E00A37426 /* GoPocketballApp.swift in Sources */,
 				352145422A34374C00A37426 /* CapturedImageCollectionView.swift in Sources */,
@@ -478,7 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GoPocketball/Preview Content\"";
-				DEVELOPMENT_TEAM = 3LTF5F2YL4;
+				DEVELOPMENT_TEAM = 96H5TT55S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "허가 해줘! 해달라고!";
@@ -508,7 +520,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GoPocketball/Preview Content\"";
-				DEVELOPMENT_TEAM = 3LTF5F2YL4;
+				DEVELOPMENT_TEAM = 96H5TT55S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "허가 해줘! 해달라고!";
