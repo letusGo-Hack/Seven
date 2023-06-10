@@ -30,7 +30,9 @@ struct CapturedImageCollectionView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
-//                        CaptureView()
+                        if #available(iOS 17.0, *) {
+                            CaptureView(in: documentationURL())
+                        }
                     } label: {
                         Text("추가")
                     }
@@ -38,5 +40,13 @@ struct CapturedImageCollectionView: View {
                 }
             }
         }
+    }
+    
+    func documentationURL() -> URL {
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        try? FileManager.default.removeItem(at: documentsURL.appendingPathComponent("Snapshots/"))
+        try? FileManager.default.removeItem(at: documentsURL.appendingPathComponent("Images/"))
+        return documentsURL
     }
 }
