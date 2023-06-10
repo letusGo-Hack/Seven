@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		352145142A34294E00A37426 /* GoPocketballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145132A34294E00A37426 /* GoPocketballApp.swift */; };
+		352145162A34294E00A37426 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145152A34294E00A37426 /* ContentView.swift */; };
+		352145182A34295000A37426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352145172A34295000A37426 /* Assets.xcassets */; };
+		3521451B2A34295000A37426 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3521451A2A34295000A37426 /* Preview Assets.xcassets */; };
+		352145252A34295000A37426 /* GoPocketballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145242A34295000A37426 /* GoPocketballTests.swift */; };
+		3521452F2A34295000A37426 /* GoPocketballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3521452E2A34295000A37426 /* GoPocketballUITests.swift */; };
+		352145312A34295000A37426 /* GoPocketballUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145302A34295000A37426 /* GoPocketballUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		352145212A34295000A37426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 352145082A34294E00A37426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3521450F2A34294E00A37426;
+			remoteInfo = GoPocketball;
+		};
+		3521452B2A34295000A37426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 352145082A34294E00A37426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3521450F2A34294E00A37426;
+			remoteInfo = GoPocketball;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		352145102A34294E00A37426 /* GoPocketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoPocketball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		352145132A34294E00A37426 /* GoPocketballApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoPocketballApp.swift; sourceTree = "<group>"; };
+		352145152A34294E00A37426 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		352145172A34295000A37426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3521451A2A34295000A37426 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		352145202A34295000A37426 /* GoPocketballTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoPocketballTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		352145242A34295000A37426 /* GoPocketballTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoPocketballTests.swift; sourceTree = "<group>"; };
+		3521452A2A34295000A37426 /* GoPocketballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoPocketballUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3521452E2A34295000A37426 /* GoPocketballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoPocketballUITests.swift; sourceTree = "<group>"; };
+		352145302A34295000A37426 /* GoPocketballUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoPocketballUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3521450D2A34294E00A37426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3521451D2A34295000A37426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		352145272A34295000A37426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		352145072A34294E00A37426 = {
+			isa = PBXGroup;
+			children = (
+				352145122A34294E00A37426 /* GoPocketball */,
+				352145232A34295000A37426 /* GoPocketballTests */,
+				3521452D2A34295000A37426 /* GoPocketballUITests */,
+				352145112A34294E00A37426 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		352145112A34294E00A37426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				352145102A34294E00A37426 /* GoPocketball.app */,
+				352145202A34295000A37426 /* GoPocketballTests.xctest */,
+				3521452A2A34295000A37426 /* GoPocketballUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		352145122A34294E00A37426 /* GoPocketball */ = {
+			isa = PBXGroup;
+			children = (
+				352145132A34294E00A37426 /* GoPocketballApp.swift */,
+				352145152A34294E00A37426 /* ContentView.swift */,
+				352145172A34295000A37426 /* Assets.xcassets */,
+				352145192A34295000A37426 /* Preview Content */,
+			);
+			path = GoPocketball;
+			sourceTree = "<group>";
+		};
+		352145192A34295000A37426 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3521451A2A34295000A37426 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		352145232A34295000A37426 /* GoPocketballTests */ = {
+			isa = PBXGroup;
+			children = (
+				352145242A34295000A37426 /* GoPocketballTests.swift */,
+			);
+			path = GoPocketballTests;
+			sourceTree = "<group>";
+		};
+		3521452D2A34295000A37426 /* GoPocketballUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3521452E2A34295000A37426 /* GoPocketballUITests.swift */,
+				352145302A34295000A37426 /* GoPocketballUITestsLaunchTests.swift */,
+			);
+			path = GoPocketballUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3521450F2A34294E00A37426 /* GoPocketball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 352145342A34295000A37426 /* Build configuration list for PBXNativeTarget "GoPocketball" */;
+			buildPhases = (
+				3521450C2A34294E00A37426 /* Sources */,
+				3521450D2A34294E00A37426 /* Frameworks */,
+				3521450E2A34294E00A37426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoPocketball;
+			productName = GoPocketball;
+			productReference = 352145102A34294E00A37426 /* GoPocketball.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3521451F2A34295000A37426 /* GoPocketballTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 352145372A34295000A37426 /* Build configuration list for PBXNativeTarget "GoPocketballTests" */;
+			buildPhases = (
+				3521451C2A34295000A37426 /* Sources */,
+				3521451D2A34295000A37426 /* Frameworks */,
+				3521451E2A34295000A37426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				352145222A34295000A37426 /* PBXTargetDependency */,
+			);
+			name = GoPocketballTests;
+			productName = GoPocketballTests;
+			productReference = 352145202A34295000A37426 /* GoPocketballTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		352145292A34295000A37426 /* GoPocketballUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3521453A2A34295000A37426 /* Build configuration list for PBXNativeTarget "GoPocketballUITests" */;
+			buildPhases = (
+				352145262A34295000A37426 /* Sources */,
+				352145272A34295000A37426 /* Frameworks */,
+				352145282A34295000A37426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3521452C2A34295000A37426 /* PBXTargetDependency */,
+			);
+			name = GoPocketballUITests;
+			productName = GoPocketballUITests;
+			productReference = 3521452A2A34295000A37426 /* GoPocketballUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		352145082A34294E00A37426 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3521450F2A34294E00A37426 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					3521451F2A34295000A37426 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 3521450F2A34294E00A37426;
+					};
+					352145292A34295000A37426 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 3521450F2A34294E00A37426;
+					};
+				};
+			};
+			buildConfigurationList = 3521450B2A34294E00A37426 /* Build configuration list for PBXProject "GoPocketball" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 352145072A34294E00A37426;
+			productRefGroup = 352145112A34294E00A37426 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3521450F2A34294E00A37426 /* GoPocketball */,
+				3521451F2A34295000A37426 /* GoPocketballTests */,
+				352145292A34295000A37426 /* GoPocketballUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3521450E2A34294E00A37426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3521451B2A34295000A37426 /* Preview Assets.xcassets in Resources */,
+				352145182A34295000A37426 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3521451E2A34295000A37426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		352145282A34295000A37426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3521450C2A34294E00A37426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352145162A34294E00A37426 /* ContentView.swift in Sources */,
+				352145142A34294E00A37426 /* GoPocketballApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3521451C2A34295000A37426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352145252A34295000A37426 /* GoPocketballTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		352145262A34295000A37426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3521452F2A34295000A37426 /* GoPocketballUITests.swift in Sources */,
+				352145312A34295000A37426 /* GoPocketballUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		352145222A34295000A37426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3521450F2A34294E00A37426 /* GoPocketball */;
+			targetProxy = 352145212A34295000A37426 /* PBXContainerItemProxy */;
+		};
+		3521452C2A34295000A37426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3521450F2A34294E00A37426 /* GoPocketball */;
+			targetProxy = 3521452B2A34295000A37426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		352145322A34295000A37426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		352145332A34295000A37426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		352145352A34295000A37426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoPocketball/Preview Content\"";
+				DEVELOPMENT_TEAM = 96H5TT55S4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = peter.GoPocketball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		352145362A34295000A37426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoPocketball/Preview Content\"";
+				DEVELOPMENT_TEAM = 96H5TT55S4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = peter.GoPocketball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		352145382A34295000A37426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96H5TT55S4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = peter.GoPocketballTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoPocketball.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoPocketball";
+			};
+			name = Debug;
+		};
+		352145392A34295000A37426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96H5TT55S4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = peter.GoPocketballTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoPocketball.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoPocketball";
+			};
+			name = Release;
+		};
+		3521453B2A34295000A37426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96H5TT55S4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = peter.GoPocketballUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoPocketball;
+			};
+			name = Debug;
+		};
+		3521453C2A34295000A37426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96H5TT55S4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = peter.GoPocketballUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoPocketball;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3521450B2A34294E00A37426 /* Build configuration list for PBXProject "GoPocketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				352145322A34295000A37426 /* Debug */,
+				352145332A34295000A37426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		352145342A34295000A37426 /* Build configuration list for PBXNativeTarget "GoPocketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				352145352A34295000A37426 /* Debug */,
+				352145362A34295000A37426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		352145372A34295000A37426 /* Build configuration list for PBXNativeTarget "GoPocketballTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				352145382A34295000A37426 /* Debug */,
+				352145392A34295000A37426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3521453A2A34295000A37426 /* Build configuration list for PBXNativeTarget "GoPocketballUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3521453B2A34295000A37426 /* Debug */,
+				3521453C2A34295000A37426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 352145082A34294E00A37426 /* Project object */;
+}
