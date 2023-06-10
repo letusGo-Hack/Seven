@@ -18,9 +18,12 @@ struct CapturedImageCollectionView: View {
                     spacing: 10
                 )
                 {
-                    ForEach(mockData.data, id: \.self) { data in
-                        NavigationLink(destination: ARCameraView(objectURLPath: data.imageURL)) {
-                            ImageCellView(item: data.name)
+                    NavigationLink(destination: ARCameraView(objectURLPath: Dummy.ojectURL)) {
+                        ImageCellView(item: "Dummy")
+                    }
+                    ForEach(mockData.usdzFileNames, id: \.self) { name in
+                        NavigationLink(destination: ARCameraView(objectURLPath: documentationURL().appendingPathComponent("Models/\(name).usdz").absoluteString)) {
+                            ImageCellView(item: name)
                         }
                     }
                 }
@@ -30,7 +33,9 @@ struct CapturedImageCollectionView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
-//                        CaptureView()
+                        if #available(iOS 17.0, *) {
+                            CaptureView(in: documentationURL(), name: "")
+                        }
                     } label: {
                         Text("추가")
                     }
@@ -38,5 +43,13 @@ struct CapturedImageCollectionView: View {
                 }
             }
         }
+    }
+    
+    func documentationURL() -> URL {
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        try? FileManager.default.removeItem(at: documentsURL.appendingPathComponent("Snapshots/"))
+        try? FileManager.default.removeItem(at: documentsURL.appendingPathComponent("Images/"))
+        return documentsURL
     }
 }
