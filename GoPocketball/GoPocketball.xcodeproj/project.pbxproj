@@ -17,7 +17,10 @@
 		352145402A34372A00A37426 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3521453F2A34372A00A37426 /* ImageData.swift */; };
 		352145422A34374C00A37426 /* CapturedImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145412A34374C00A37426 /* CapturedImageCollectionView.swift */; };
 		352145472A343A1600A37426 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145462A343A1600A37426 /* Capture.swift */; };
-		352145492A343A2000A37426 /* ARCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145482A343A2000A37426 /* ARCamera.swift */; };
+		352145492A343A2000A37426 /* ARCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145482A343A2000A37426 /* ARCameraView.swift */; };
+		D1DB3BAB2A344A07007884F1 /* ARQuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB3BAA2A344A07007884F1 /* ARQuickLookViewController.swift */; };
+		D1DB3BAD2A34529F007884F1 /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D1DB3BAC2A34529F007884F1 /* AirForce.usdz */; };
+		D1DB3BAF2A3458EF007884F1 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB3BAE2A3458EF007884F1 /* Dummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +54,10 @@
 		3521453F2A34372A00A37426 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		352145412A34374C00A37426 /* CapturedImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedImageCollectionView.swift; sourceTree = "<group>"; };
 		352145462A343A1600A37426 /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
-		352145482A343A2000A37426 /* ARCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCamera.swift; sourceTree = "<group>"; };
+		352145482A343A2000A37426 /* ARCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraView.swift; sourceTree = "<group>"; };
+		D1DB3BAA2A344A07007884F1 /* ARQuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickLookViewController.swift; sourceTree = "<group>"; };
+		D1DB3BAC2A34529F007884F1 /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = AirForce.usdz; path = ../../../../Downloads/AirForce.usdz; sourceTree = "<group>"; };
+		D1DB3BAE2A3458EF007884F1 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +156,10 @@
 		352145442A3439DC00A37426 /* ARCamera */ = {
 			isa = PBXGroup;
 			children = (
-				352145482A343A2000A37426 /* ARCamera.swift */,
+				D1DB3BAC2A34529F007884F1 /* AirForce.usdz */,
+				352145482A343A2000A37426 /* ARCameraView.swift */,
+				D1DB3BAA2A344A07007884F1 /* ARQuickLookViewController.swift */,
+				D1DB3BAE2A3458EF007884F1 /* Dummy.swift */,
 			);
 			path = ARCamera;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 			files = (
 				3521451B2A34295000A37426 /* Preview Assets.xcassets in Resources */,
 				352145182A34295000A37426 /* Assets.xcassets in Resources */,
+				D1DB3BAD2A34529F007884F1 /* AirForce.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,9 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				352145162A34294E00A37426 /* ContentView.swift in Sources */,
+				D1DB3BAB2A344A07007884F1 /* ARQuickLookViewController.swift in Sources */,
+				D1DB3BAF2A3458EF007884F1 /* Dummy.swift in Sources */,
 				352145142A34294E00A37426 /* GoPocketballApp.swift in Sources */,
 				352145422A34374C00A37426 /* CapturedImageCollectionView.swift in Sources */,
-				352145492A343A2000A37426 /* ARCamera.swift in Sources */,
+				352145492A343A2000A37426 /* ARCameraView.swift in Sources */,
 				352145472A343A1600A37426 /* Capture.swift in Sources */,
 				352145402A34372A00A37426 /* ImageData.swift in Sources */,
 			);
@@ -387,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -444,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -462,7 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GoPocketball/Preview Content\"";
-				DEVELOPMENT_TEAM = 96H5TT55S4;
+				DEVELOPMENT_TEAM = 3LTF5F2YL4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -491,7 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GoPocketball/Preview Content\"";
-				DEVELOPMENT_TEAM = 96H5TT55S4;
+				DEVELOPMENT_TEAM = 3LTF5F2YL4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
