@@ -19,8 +19,8 @@ struct CapturedImageCollectionView: View {
                 )
                 {
                     ForEach(mockData.data, id: \.self) { data in
-                        NavigationLink(destination: ARCameraView(objectURLPath: Dummy.ojectURL)) {
-                            ImageCellView(item: data)
+                        NavigationLink(destination: ARCameraView(objectURLPath: data.imageURL)) {
+                            ImageCellView(item: data.name)
                         }
                     }
                 }

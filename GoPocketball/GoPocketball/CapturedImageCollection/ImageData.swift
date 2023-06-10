@@ -8,12 +8,12 @@
 import Foundation
 import SwiftUI
 
-struct ImageData: Identifiable {
+struct ImageData: Identifiable, Hashable {
     let id = UUID()
-    let imageURL: URL
+    let imageURL: String
     let name: String
 }
 
-struct MockData: Hashable {
-    let data: [String] = (0...80).map { "이거 번호 \($0)"}
+struct MockData {
+    let data: [ImageData]
 }
