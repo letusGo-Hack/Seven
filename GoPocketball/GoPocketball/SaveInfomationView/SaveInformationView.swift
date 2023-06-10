@@ -20,15 +20,25 @@ struct SaveInformationView: View {
                 String(),
                 text: $text
             )
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .font(.system(size: 30))
-                        
-            Button("잡았다.") {
-                print("저장합니다.")
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .font(.system(size: 30))
+            
+            if #available(iOS 17.0, *) {
+                NavigationLink(destination: CaptureView(in: documentationURL(), name: text)) {
+                    Text("잡았다.")
+                        .font(.system(size: 40))
+                }
             }
-            .font(.system(size: 40))
         }
         .padding(30)
+    }
+    
+    func documentationURL() -> URL {
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        try? FileManager.default.removeItem(at: documentsURL.appendingPathComponent("Snapshots/"))
+        try? FileManager.default.removeItem(at: documentsURL.appendingPathComponent("Images/"))
+        return documentsURL
     }
 }
 
