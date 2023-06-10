@@ -9,10 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView(content: {
-            NavigationLink(destination: ARCameraView(objectURLPath: Dummy.ojectURL)) { /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/ }
-        })
-       
+        CapturedImageCollectionView(mockData: MockData())
     }
 }
 
