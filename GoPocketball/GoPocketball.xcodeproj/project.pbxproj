@@ -14,6 +14,10 @@
 		352145252A34295000A37426 /* GoPocketballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145242A34295000A37426 /* GoPocketballTests.swift */; };
 		3521452F2A34295000A37426 /* GoPocketballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3521452E2A34295000A37426 /* GoPocketballUITests.swift */; };
 		352145312A34295000A37426 /* GoPocketballUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145302A34295000A37426 /* GoPocketballUITestsLaunchTests.swift */; };
+		352145402A34372A00A37426 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3521453F2A34372A00A37426 /* ImageData.swift */; };
+		352145422A34374C00A37426 /* CapturedImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145412A34374C00A37426 /* CapturedImageCollectionView.swift */; };
+		352145472A343A1600A37426 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145462A343A1600A37426 /* Capture.swift */; };
+		352145492A343A2000A37426 /* ARCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352145482A343A2000A37426 /* ARCamera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		3521452A2A34295000A37426 /* GoPocketballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoPocketballUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3521452E2A34295000A37426 /* GoPocketballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoPocketballUITests.swift; sourceTree = "<group>"; };
 		352145302A34295000A37426 /* GoPocketballUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoPocketballUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3521453F2A34372A00A37426 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		352145412A34374C00A37426 /* CapturedImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedImageCollectionView.swift; sourceTree = "<group>"; };
+		352145462A343A1600A37426 /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
+		352145482A343A2000A37426 /* ARCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCamera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		352145122A34294E00A37426 /* GoPocketball */ = {
 			isa = PBXGroup;
 			children = (
+				352145452A343A0D00A37426 /* Capture */,
+				352145442A3439DC00A37426 /* ARCamera */,
+				352145432A34397500A37426 /* CapturedImageCollection */,
 				352145132A34294E00A37426 /* GoPocketballApp.swift */,
 				352145152A34294E00A37426 /* ContentView.swift */,
 				352145172A34295000A37426 /* Assets.xcassets */,
@@ -125,6 +136,31 @@
 				352145302A34295000A37426 /* GoPocketballUITestsLaunchTests.swift */,
 			);
 			path = GoPocketballUITests;
+			sourceTree = "<group>";
+		};
+		352145432A34397500A37426 /* CapturedImageCollection */ = {
+			isa = PBXGroup;
+			children = (
+				3521453F2A34372A00A37426 /* ImageData.swift */,
+				352145412A34374C00A37426 /* CapturedImageCollectionView.swift */,
+			);
+			path = CapturedImageCollection;
+			sourceTree = "<group>";
+		};
+		352145442A3439DC00A37426 /* ARCamera */ = {
+			isa = PBXGroup;
+			children = (
+				352145482A343A2000A37426 /* ARCamera.swift */,
+			);
+			path = ARCamera;
+			sourceTree = "<group>";
+		};
+		352145452A343A0D00A37426 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				352145462A343A1600A37426 /* Capture.swift */,
+			);
+			path = Capture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +295,10 @@
 			files = (
 				352145162A34294E00A37426 /* ContentView.swift in Sources */,
 				352145142A34294E00A37426 /* GoPocketballApp.swift in Sources */,
+				352145422A34374C00A37426 /* CapturedImageCollectionView.swift in Sources */,
+				352145492A343A2000A37426 /* ARCamera.swift in Sources */,
+				352145472A343A1600A37426 /* Capture.swift in Sources */,
+				352145402A34372A00A37426 /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
