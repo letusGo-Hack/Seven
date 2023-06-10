@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ImageData: Identifiable {
     let id = UUID()
-    let imageURL: URL
+    let imageURL: String
     let name: String
 }
 

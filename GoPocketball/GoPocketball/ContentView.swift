@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let data = MockData(data: [ImageData(
-        imageURL: Dummy.ojectURL,
-        name: "기본 이미지"
-    )
-    ])
+    let data = MockData()
     
     var body: some View {
         CapturedImageCollectionView(mockData: data)
