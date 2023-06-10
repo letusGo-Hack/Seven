@@ -9,16 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationView(content: {
+            NavigationLink(destination: ARCameraView(objectURLPath: Dummy.ojectURL)) { /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/ }
+        })
+       
     }
 }
 
-#Preview {
-    ContentView()
-}
+// iOS17부터 지원
+//#Preview {
+//    ContentView()
+//}
